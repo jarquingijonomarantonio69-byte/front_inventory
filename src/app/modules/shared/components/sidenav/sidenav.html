@@ -35,6 +35,11 @@
                         <h4>omarjarquin042@gmail.com</h4>
                       </div>
                     </div>
+                    <mat-divider></mat-divider>
+                    <a mat-list-item [routerLink]="nav.route" *ngFor="let nav of menuNav">
+                      <mat-icon matListItemIcon>{{nav.icon}}</mat-icon>
+                      <span matListItemTitle>{{nav.name}}</span> 
+                    </a>
                   </mat-nav-list>
                 </mat-sidenav> 
   <mat-sidenav-content>
